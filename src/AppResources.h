@@ -18,7 +18,9 @@
 #define ListForm							      1200
 
 // Resource Entry Form
-#define EntryForm								  1300
+#define PikachuForm								  1300
+#define LittenForm								  1400
+#define PopplioForm								  1500
 
 //	Resource: Talt 1001
 #define RomIncompatibleAlert                      1001
@@ -33,6 +35,8 @@
 #define MainOptionsMenu                           1000
 #define MainOptionsAboutStarterApp                1000
 #define PokemonMenuPikachu						  1002
+#define PokemonMenuLitten						  1003
+#define PokemonMenuPopplio						  1004
 
 
 //	Resource: PICT 1001

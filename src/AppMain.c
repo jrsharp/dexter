@@ -63,7 +63,19 @@ static Boolean MainFormDoCommand(UInt16 command)
 			handled = true;
 			break;
 		case PokemonMenuPikachu:
-			pForm = FrmInitForm(EntryForm);
+			pForm = FrmInitForm(PikachuForm);
+			FrmDoDialog(pForm);
+			FrmDeleteForm(pForm);
+			handled = true;
+			break;
+		case PokemonMenuLitten:
+			pForm = FrmInitForm(LittenForm);
+			FrmDoDialog(pForm);
+			FrmDeleteForm(pForm);
+			handled = true;
+			break;
+		case PokemonMenuPopplio:
+			pForm = FrmInitForm(PopplioForm);
 			FrmDoDialog(pForm);
 			FrmDeleteForm(pForm);
 			handled = true;
@@ -154,7 +166,7 @@ static Boolean AppHandleEvent(EventType* pEvent)
 				FrmSetEventHandler(pForm, MainFormHandleEvent);
 				break;
 				
-			case EntryForm:
+			case PikachuForm:
 				FrmSetEventHandler(pForm, MainFormHandleEvent);
 				break;
 				
