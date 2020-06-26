@@ -170,6 +170,14 @@ static Boolean AppHandleEvent(EventType* pEvent)
 				FrmSetEventHandler(pForm, MainFormHandleEvent);
 				break;
 				
+			case LittenForm:
+				FrmSetEventHandler(pForm, MainFormHandleEvent);
+				break;
+				
+			case PopplioForm:
+				FrmSetEventHandler(pForm, MainFormHandleEvent);
+				break;
+				
 			default:
 				break;
 		}
